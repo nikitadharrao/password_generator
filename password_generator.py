@@ -1,5 +1,6 @@
 import random
 import string
+import pyperclip  # 🔹 Added for clipboard support
 
 def generate_password(length=12):
     characters = string.ascii_letters + string.digits + string.punctuation
@@ -9,4 +10,9 @@ def generate_password(length=12):
 # Main
 print("🔐 Random Password Generator")
 length = int(input("Enter password length: "))
-print("Your password is:", generate_password(length))
+password = generate_password(length)
+print("Your password is:", password)
+
+
+
+
